@@ -161,7 +161,7 @@ El aceptar o aprobar el `pull-request` es una actividad que le corresponde al en
 
 ![alt text](doc/img/merge.png "Solicitud de pull request")
 
-### 10) Borrar rama de características
+### 11) Borrar rama de características
 Posterior a la unión del `pull-request` se puede eliminar la rama remota en GitHub como se indica en la imagen relacionada con el `pull-request`:
 
 ![alt text](doc/img/closePR.png "Borrar rama de característica")
