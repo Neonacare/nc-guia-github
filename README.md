@@ -78,7 +78,7 @@ Para obtener los últimos cambios al repositorio local, realizamos los siguiente
 1. [Abrir Git Bash](#abrir-línea-de-comando-de-git-git-bash) en la carpeta del repositorio.
 2. Ingresar los siguientes comandos para actualizar una rama local en particular:
 ``` console
-git fetch origin -p
+git fetch origin -ap
 git pull origin rama-a-actualizar
 ```
 Este comando actualizara el repositorio local con los cambios que existan en el repositorio remoto (en GitHub).
@@ -152,7 +152,7 @@ Una vez creado el `pull-request` se le notificará al resto de colaboradores par
 
 Para revisar los cambios de una rama remota nueva, en un repositorio local, se ejecutan los siguientes comandos:
 ``` console
-git fetch origin -p
+git fetch origin -ap
 git checkout --track origin/<NewFeature>
 ```
 
@@ -171,7 +171,7 @@ De manera paralela, se deberá eliminar la rama en el repositorio local y [actua
 ```` console
 git checkout desarrollo        
 git branch -D <NewFeature>
-git fetch origin -p
+git fetch origin -ap
 git pull origin desarrollo
 ````
 
