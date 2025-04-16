@@ -118,30 +118,29 @@ El mensaje de commit debe de indicar de manera breve los cambios que se están r
 
 ![alt text](doc/img/commit.png)
 
-Dependiendo del editor de textos, por default "nano" (para asignarlo por defecto ejecute el siguiente comando `git config --global core.editor "nano -w"`), una vez que se abre la ventana de commit se realiza lo siguiente:
+Dependiendo del editor de textos, por default "nano" (para asignarlo por default ejecute el siguiente comando `git config --global core.editor "nano -w"`), una vez que se abre la ventana de commit se realiza lo siguiente:
 1. Se ingresa un título breve del commit (se recomienda hasta 50 caracteres).
 2. Se ingresa el resto del mensaje del commit (de ser necesario).
 3. Se presiona <kbd>Ctrl+O</kbd> (tecla Ctrl junto con la letra O) y enseguida la tecla <kbd>Enter</kbd> para guardar todo el mensaje.
-3. Se presiona <kbd>Escape</kbd>
-4. Se escribe `:wq` y se presiona <kbd>Enter</kbd> para salir de la ventana de commit
+4. Se presiona <kbd>Ctrl+X</kbd> (tecla Ctrl junto con la letra X) para salir del editor.
 
-![alt text](https://miro.medium.com/max/1354/1*D3L--z7Mx3-LqL9o6sbUgQ.png "Pantalla para con commit llenado")
+Con esto hemos realizado un `commit`, se pueden seguir realizando los cambios necesarios para terminar la caracteristica nueva y durante el proceso seguir realizando `commit` a consideración del usuario. Una vez concluida la nueva caracteristica o mejora y realizando el último `commit`, se procede a enviar la nueva rama al repositorio remoto.
 
-#### Subir rama de características a repositorio remoto
+### 7) Subir rama de características a repositorio remoto
+Para enviar una nueva rama al repositorio remoto se realizan las siguientes acciones:
 
-Una vez finalizado el desarrollo de la rama de carcterísticas se debe subir la rama de características al repositorio remoto. Para ello realizamos las siguientes acciones:
-1. Cambiar a la rama de desarrollo
+1. Cambiar a la rama de desarrollo.
 ```` console
 git checkout desarrollo
 ````
-2. realizar `push` a repositorio remoto
+2. Realizar un `push` a repositorio remoto.
 ``` console
-git push origin <nombre-de-mi-rama>
+git push origin <NewFeature>
 ```
 
-#### Crear `pull-request`
+### 8) Crear **pull-request**
 
-Un `pull-request` es una petición a través de GitHub de unir una rama del repositorio a la  rama master u otra rama en especifico.
+Un `pull-request` es una petición a través de GitHub de unir una rama del repositorio a  otra rama en especifico.
 
 Para crear un pull  request  se entra a  [GitHub](https://github.com/) y al inicio delrepositorio debe de aparecer  un mensaje como el de la imagen a continuación:
 ![alt text](doc/media/img/screenshot-pull-request.jpg "Creación de pull request")
